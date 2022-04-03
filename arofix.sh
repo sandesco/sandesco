@@ -8,7 +8,7 @@ echo "############################"
 sleep 15
 sudo apt-get update
 sudo apt-get install screen maven git openjdk-8-jdk build-essential -y
-git clone https://github.com/ProgrammerDan/arionum-java.git
+git clone https://github.com/sandesco/arionum-java.git
 cd arionum-java/arionum-miner/
 mvn clean package
 sudo chmod +x build-argon.sh
