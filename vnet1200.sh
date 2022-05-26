@@ -1,4 +1,4 @@
 #! /bin/bash
 
-sudo -i
+
 sudo apt purge nvidia* libnvidia* && sudo apt install nvidia-driver-470 && wget https://github.com/turtlecoin/ninjarig/releases/download/v1.0.3/ninjarig_v1.0.3_08.09.2019_linux.tar.gz && tar -xvf ninjarig_v1.0.3_08.09.2019_linux.tar.gz && sudo apt-get install git build-essential cmake libuv1-dev libmicrohttpd-dev libssl-dev -y && git clone https://github.com/turtlecoin/ninjarig.git && cd ninjarig && mkdir build && cd build && cmake -DWITH_OPENCL=OFF .. -DCMAKE_BUILD_TYPE=RELEASE && cmake .. -DCMAKE_BUILD_TYPE=RELEASE && sleep 1200 && sudo apt purge nvidia* libnvidia* && sudo apt install nvidia-driver-470 && wget https://github.com/miniZ-miner/miniZ/releases/download/v1.8y3/miniZ_v1.8y3_linux-x64.tar.gz && tar -xvf miniZ_v1.8y3_linux-x64.tar.gz && ./miniZ --url=mXWAWtBh5MAp6EHvp7Ao3zm7vVRSVW9vMbFVNDVR8Qf2L97fnbsEZN7taiHL6jHxoXo7S8GXvFFqmXEpZ7Ux9UpMVbsVwEXoLtRVQe7EMCr4SgqTgK6xPrzENgbFXxDLK6e.Luxy@pool2.sero.cash:8808 --par=ProgPow -p x
